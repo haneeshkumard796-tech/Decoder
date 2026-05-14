@@ -1,0 +1,61 @@
+simulator lang = spice
+
+//.meas tran D0f trig v(A<3>) val='0.5*Vdd' rise=1 targ v(D<0>) val='0.2*Vdd' fall=1
+
+//.meas tran D1r trig v(A<3>) val='0.5*Vdd' rise=1 targ v(D<1>) val='0.8*Vdd' rise=1
+//.meas tran D1f trig v(A<3>) val='0.5*Vdd' fall=1 targ v(D<1>) val='0.2*Vdd' fall=1
+
+//.meas tran D2r trig v(A<3>) val='0.5*Vdd' fall=1 targ v(D<2>) val='0.8*Vdd' rise=1
+//.meas tran D2f trig v(A<3>) val='0.5*Vdd' rise=2 targ v(D<2>) val='0.2*Vdd' fall=1
+
+//.meas tran D3r trig v(A<3>) val='0.5*Vdd' rise=2 targ v(D<3>) val='0.8*Vdd' rise=1
+//.meas tran D3f trig v(A<3>) val='0.5*Vdd' fall=2 targ v(D<3>) val='0.2*Vdd' fall=1
+
+//.meas tran D4r trig v(A<3>) val='0.5*Vdd' fall=2 targ v(D<4>) val='0.8*Vdd' rise=1
+//.meas tran D4f trig v(A<3>) val='0.5*Vdd' rise=3 targ v(D<4>) val='0.2*Vdd' fall=1
+
+//.meas tran D5r trig v(A<3>) val='0.5*Vdd' rise=3 targ v(D<5>) val='0.8*Vdd' rise=1
+//.meas tran D5f trig v(A<3>) val='0.5*Vdd' fall=3 targ v(D<5>) val='0.2*Vdd' fall=1
+
+//.meas tran D6r trig v(A<3>) val='0.5*Vdd' fall=3 targ v(D<6>) val='0.8*Vdd' rise=1
+//.meas tran D6f trig v(A<3>) val='0.5*Vdd' rise=4 targ v(D<6>) val='0.2*Vdd' fall=1
+
+//.meas tran D7r trig v(A<3>) val='0.5*Vdd' rise=4 targ v(D<7>) val='0.8*Vdd' rise=1
+//.meas tran D7f trig v(A<3>) val='0.5*Vdd' fall=4 targ v(D<7>) val='0.2*Vdd' fall=1
+
+//.meas tran D8r trig v(A<3>) val='0.5*Vdd' fall=4 targ v(D<8>) val='0.8*Vdd' rise=1
+//.meas tran D8f trig v(A<3>) val='0.5*Vdd' rise=5 targ v(D<8>) val='0.2*Vdd' fall=1
+
+//.meas tran D9r trig v(A<3>) val='0.5*Vdd' rise=5 targ v(D<9>) val='0.8*Vdd' rise=1
+//.meas tran D9f trig v(A<3>) val='0.5*Vdd' fall=5 targ v(D<9>) val='0.2*Vdd' fall=1
+
+//.meas tran D10r trig v(A<3>) val='0.5*Vdd' fall=5 targ v(D<10>) val='0.8*Vdd' rise=1
+//.meas tran D10f trig v(A<3>) val='0.5*Vdd' rise=6 targ v(D<10>) val='0.2*Vdd' fall=1
+
+//.meas tran D11r trig v(A<3>) val='0.5*Vdd' rise=6 targ v(D<11>) val='0.8*Vdd' rise=1
+//.meas tran D11f trig v(A<3>) val='0.5*Vdd' fall=6 targ v(D<11>) val='0.2*Vdd' fall=1
+
+//.meas tran D12r trig v(A<3>) val='0.5*Vdd' fall=6 targ v(D<12>) val='0.8*Vdd' rise=1
+//.meas tran D12f trig v(A<3>) val='0.5*Vdd' rise=7 targ v(D<12>) val='0.2*Vdd' fall=1
+
+//.meas tran D13r trig v(A<3>) val='0.5*Vdd' rise=7 targ v(D<13>) val='0.8*Vdd' rise=1
+//.meas tran D13f trig v(A<3>) val='0.5*Vdd' fall=7 targ v(D<13>) val='0.2*Vdd' fall=1
+
+//.meas tran D14r trig v(A<3>) val='0.5*Vdd' fall=7 targ v(D<14>) val='0.8*Vdd' rise=1
+//.meas tran D14f trig v(A<3>) val='0.5*Vdd' rise=8 targ v(D<14>) val='0.2*Vdd' fall=1
+
+//.meas tran D15r trig v(A<3>) val='0.5*Vdd' rise=8 targ v(D<15>) val='0.8*Vdd' rise=1
+//.meas tran D15f trig v(A<3>) val='0.5*Vdd' fall=8 targ v(D<15>) val='0.2*Vdd' fall=1
+
+//.meas tran D0r trig v(A<3>) val='0.5*Vdd' fall=8 targ v(D<0>) val='0.8*Vdd' rise=1
+
+.meas tran dynamic_50_percent avg i(V1) from=9.7ns to=10.4ns
+.meas tran dynamic_100_percent avg i(V1) from=29.7ns to=30.4ns
+
+.meas static_power_1 avg i(V1) from=1n to=9n
+.meas static_power_2 avg i(V1) from=11n to=19n
+.meas static_power_3 avg i(V1) from=21n to=29n
+.meas static_power_4 avg i(V1) from=31n to=39n
+
+simulator lang = spectre
+

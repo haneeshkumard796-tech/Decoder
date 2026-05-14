@@ -1,0 +1,25 @@
+simulator lang = spice
+
+.tran 100ps 180ns
+
+
+V1 Vdd gnd 1v
+V2 Vss gnd 0v
+
+
+//V_A A gnd pwl(0n 0v 9.9n 0v 10n 0v 19.9n 0v 20n 0v 29.9n 0v 30n 0v 39.9n 0v 40n 0v 49.9n 0v 50n 0v 59.9n 0v 60n 0v 69.9n 0v 70n 0v 79.9n 0v 80n 1v 89.9n 1v 90n 1v 99.9n 1v 100n 1v 109.9n 1v 110n 1v 119.9n 1v 120n 1v 129.9n 1v 130n 1v 139.9n 1v 140n 1v 149.9n 1v 150n 1v 159.9n 1v 160n 0v)
+
+//V_B B gnd pwl(0n 0v 9.9n 0v 10n 0v 19.9n 0v 20n 0v 29.9n 0v 30n 0v 39.9n 0v 40n 1v 49.9n 1v 50n 1v 59.9n 1v 60n 1v 69.9n 1v 70n 1v 79.9n 1v 80n 0v 89.9n 0v 90n 0v 99.9n 0v 100n 0v 109.9n 0v 110n 0v 119.9n 0v 120n 1v 129.9n 1v 130n 1v 139.9n 1v 140n 1v 149.9n 1v 150n 1v 159.9n 1v 160n 0v)
+
+//V_C C gnd pwl(0n 0v 9.9n 0v 10n 0v 19.9n 0v 20n 1v 29.9n 1v 30n 1v 39.9n 1v 40n 0v 49.9n 0v 50n 0v 59.9n 0v 60n 1v 69.9n 1v 70n 1v 79.9n 1v 80n 0v 89.9n 0v 90n 0v 99.9n 0v 100n 1v 109.9n 1v 110n 1v 119.9n 1v 120n 0v 129.9n 0v 130n 0v 139.9n 0v 140n 1v 149.9n 1v 150n 1v 159.9n 1v 160n 0v)
+
+//V_D D gnd pwl(0n 0v 9.9n 0v 10n 1v 19.9n 1v 20n 0v 29.9n 0v 30n 1v 39.9n 1v 40n 0v 49.9n 0v 50n 1v 59.9n 1v 60n 0v 69.9n 0v 70n 1v 79.9n 1v 80n 0v 89.9n 0v 90n 1v 99.9n 1v 100n 0v 109.9n 0v 110n 1v 119.9n 1v 120n 0v 129.9n 0v 130n 1v 139.9n 1v 140n 0v 149.9n 0v 150n 1v 159.9n 1v 160n 0v)
+
+ 
+V_A A gnd pwl(0n 0v 30ns 0v 30.1n 1v)
+V_B B gnd pwl(0n 0v 30ns 0v 30.1n 1v)
+V_C C gnd pwl(0n 0v 10n 0v 10.1n 1v 20n 1v 20.1n 0v 30n 0v 30.1n 1v 40n 1v)
+V_D D gnd pwl(0n 0v 10n 0v 10.1n 1v 20n 1v 20.1n 0v 30n 0v 30.1n 1v 40n 1v)
+
+simulator lang = spectre
+

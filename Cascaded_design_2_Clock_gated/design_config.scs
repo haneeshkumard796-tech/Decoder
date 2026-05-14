@@ -1,0 +1,6 @@
+simulator lang = spectre
+
+include "/home/install/FOUNDRY/analog/45nm/gpdk045/../models/spectre/gpdk045.scs" section=tt
+include "./netlist.scs"
+include "./stimulus.scs"
+include "./measure.scs"

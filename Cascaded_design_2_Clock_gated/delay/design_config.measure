@@ -1,0 +1,47 @@
+Exported variables from results directory:  ./delay/design_config.raw/
+
+date               :  12:36:22 AM, Sun Feb 9, 2025
+design             :  (no title)
+simulator          :  spectre
+version            :  21.1.0.546.isr13
+
+
+Measurement Name   :  timeSweep
+Analysis Type      :  tran
+d0f                   =  6.26657e-11 
+d0r                   =  6.0379e-11 
+d10f                  =  6.26572e-11 
+d10r                  =  5.80097e-11 
+d11f                  =  6.26571e-11 
+d11r                  =  5.80148e-11 
+d12f                  =  6.26572e-11 
+d12r                  =  5.80061e-11 
+d13f                  =  6.26572e-11 
+d13r                  =  5.80144e-11 
+d14f                  =  6.26572e-11 
+d14r                  =  5.80097e-11 
+d15f                  =  6.2672e-11 
+d15r                  =  5.80154e-11 
+d1f                   =  6.26652e-11 
+d1r                   =  5.80218e-11 
+d2f                   =  6.26651e-11 
+d2r                   =  5.80163e-11 
+d3f                   =  6.26651e-11 
+d3r                   =  5.80213e-11 
+d4f                   =  6.26572e-11 
+d4r                   =  5.80058e-11 
+d5f                   =  6.26572e-11 
+d5r                   =  5.80144e-11 
+d6f                   =  6.26572e-11 
+d6r                   =  5.80097e-11 
+d7f                   =  6.26571e-11 
+d7r                   =  5.80154e-11 
+d8f                   =  6.26572e-11 
+d8r                   =  5.80039e-11 
+d9f                   =  6.26572e-11 
+d9r                   =  5.80144e-11 
+
+
+
+
+

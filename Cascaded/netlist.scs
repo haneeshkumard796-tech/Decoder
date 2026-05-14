@@ -1,0 +1,128 @@
+// Generated for: spectre
+// Generated on: Feb  8 18:56:49 2025
+// Design library name: Haneesh_1
+// Design cell name: Cascade_4_to_16
+// Design view name: schematic
+simulator lang=spectre
+global 0
+//include "/home/install/FOUNDRY/analog/45nm/gpdk045/../models/spectre/gpdk045.scs" section=mc
+
+// Library name: Haneesh_1
+// Cell name: inverter
+// View name: schematic
+subckt inverter Vdd Vin Vout Vss
+    PM0 (Vout Vin Vdd Vdd) g45p1svt w=(170n) l=45n nf=1 as=23.8f ad=23.8f \
+        ps=620n pd=620n nrd=823.529m nrs=823.529m sa=140n sb=140n sd=160n \
+        sca=185.74386 scb=0.11251 scc=0.02313 m=(1)
+    NM0 (Vout Vin Vss Vss) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+ends inverter
+// End of subcircuit definition.
+
+// Library name: Haneesh_1
+// Cell name: 3_ip_AND
+// View name: schematic
+subckt Haneesh_1_3_ip_AND_schematic A B C Vdd Vout Vss
+    PM3 (Vout net2 Vdd Vdd) g45p1svt w=(170n) l=45n nf=1 as=23.8f ad=23.8f \
+        ps=620n pd=620n nrd=823.529m nrs=823.529m sa=140n sb=140n sd=160n \
+        sca=185.74386 scb=0.11251 scc=0.02313 m=(1)
+    PM2 (net2 C Vdd Vdd) g45p1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    PM1 (net2 B Vdd Vdd) g45p1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    PM0 (net2 A Vdd Vdd) g45p1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM3 (Vout net2 Vss Vss) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM2 (net6 C Vss Vss) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f \
+        ps=800n pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+    NM1 (net5 B net6 Vss) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f \
+        ps=800n pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+    NM0 (net2 A net5 Vss) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f \
+        ps=800n pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+ends Haneesh_1_3_ip_AND_schematic
+// End of subcircuit definition.
+
+// Library name: Haneesh_1
+// Cell name: 2_ip_AND
+// View name: schematic
+subckt Haneesh_1_2_ip_AND_schematic A B Vdd Vout Vss
+    PM2 (Vout net1 Vdd Vdd) g45p1svt w=(170n) l=45n nf=1 as=23.8f ad=23.8f \
+        ps=620n pd=620n nrd=823.529m nrs=823.529m sa=140n sb=140n sd=160n \
+        sca=185.74386 scb=0.11251 scc=0.02313 m=(1)
+    PM1 (net1 B Vdd Vdd) g45p1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    PM0 (net1 A Vdd Vdd) g45p1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM2 (Vout net1 Vss Vss) g45n1svt w=(120n) l=45n nf=1 as=16.8f ad=16.8f \
+        ps=520n pd=520n nrd=1.16667 nrs=1.16667 sa=140n sb=140n sd=160n \
+        sca=226.00151 scb=0.11734 scc=0.02767 m=(1)
+    NM1 (net2 B Vss Vss) g45n1svt w=(170n) l=45n nf=1 as=23.8f ad=23.8f \
+        ps=620n pd=620n nrd=823.529m nrs=823.529m sa=140n sb=140n sd=160n \
+        sca=185.74386 scb=0.11251 scc=0.02313 m=(1)
+    NM0 (net1 A net2 Vss) g45n1svt w=(170n) l=45n nf=1 as=23.8f ad=23.8f \
+        ps=620n pd=620n nrd=823.529m nrs=823.529m sa=140n sb=140n sd=160n \
+        sca=185.74386 scb=0.11251 scc=0.02313 m=(1)
+ends Haneesh_1_2_ip_AND_schematic
+// End of subcircuit definition.
+
+// Library name: Haneesh_1
+// Cell name: Cascade_4_to_16
+// View name: schematic
+I3 (Vdd D Dbar Vss) inverter
+I2 (Vdd C Cbar Vss) inverter
+I1 (Vdd B Bbar Vss) inverter
+I0 (Vdd A Abar Vss) inverter
+I19 (A B C Vdd net16 Vss) Haneesh_1_3_ip_AND_schematic
+I18 (A B C Vdd net15 Vss) Haneesh_1_3_ip_AND_schematic
+I17 (A B Cbar Vdd net14 Vss) Haneesh_1_3_ip_AND_schematic
+I16 (A B Cbar Vdd net13 Vss) Haneesh_1_3_ip_AND_schematic
+I15 (A Bbar C Vdd net12 Vss) Haneesh_1_3_ip_AND_schematic
+I14 (A Bbar C Vdd net11 Vss) Haneesh_1_3_ip_AND_schematic
+I13 (A Bbar Cbar Vdd net10 Vss) Haneesh_1_3_ip_AND_schematic
+I12 (A Bbar Cbar Vdd net9 Vss) Haneesh_1_3_ip_AND_schematic
+I11 (Abar B C Vdd net8 Vss) Haneesh_1_3_ip_AND_schematic
+I10 (Abar B C Vdd net7 Vss) Haneesh_1_3_ip_AND_schematic
+I9 (Abar B Cbar Vdd net6 Vss) Haneesh_1_3_ip_AND_schematic
+I8 (Abar B Cbar Vdd net5 Vss) Haneesh_1_3_ip_AND_schematic
+I7 (Abar Bbar C Vdd net4 Vss) Haneesh_1_3_ip_AND_schematic
+I6 (Abar Bbar C Vdd net3 Vss) Haneesh_1_3_ip_AND_schematic
+I5 (Abar Bbar Cbar Vdd net2 Vss) Haneesh_1_3_ip_AND_schematic
+I4 (Abar Bbar Cbar Vdd net1 Vss) Haneesh_1_3_ip_AND_schematic
+I35 (net16 D Vdd Y\<15\> Vss) Haneesh_1_2_ip_AND_schematic
+I34 (net15 Dbar Vdd Y\<14\> Vss) Haneesh_1_2_ip_AND_schematic
+I33 (net14 D Vdd Y\<13\> Vss) Haneesh_1_2_ip_AND_schematic
+I32 (net13 Dbar Vdd Y\<12\> Vss) Haneesh_1_2_ip_AND_schematic
+I31 (net12 D Vdd Y\<11\> Vss) Haneesh_1_2_ip_AND_schematic
+I30 (net11 Dbar Vdd Y\<10\> Vss) Haneesh_1_2_ip_AND_schematic
+I29 (net10 D Vdd Y\<9\> Vss) Haneesh_1_2_ip_AND_schematic
+I28 (net9 Dbar Vdd Y\<8\> Vss) Haneesh_1_2_ip_AND_schematic
+I27 (net8 D Vdd Y\<7\> Vss) Haneesh_1_2_ip_AND_schematic
+I26 (net7 Dbar Vdd Y\<6\> Vss) Haneesh_1_2_ip_AND_schematic
+I25 (net6 D Vdd Y\<5\> Vss) Haneesh_1_2_ip_AND_schematic
+I24 (net5 Dbar Vdd Y\<4\> Vss) Haneesh_1_2_ip_AND_schematic
+I23 (net4 D Vdd Y\<3\> Vss) Haneesh_1_2_ip_AND_schematic
+I22 (net3 Dbar Vdd Y\<2\> Vss) Haneesh_1_2_ip_AND_schematic
+I21 (net2 D Vdd Y\<1\> Vss) Haneesh_1_2_ip_AND_schematic
+I20 (net1 Dbar Vdd Y\<0\> Vss) Haneesh_1_2_ip_AND_schematic
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=25 tnom=25 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+//modelParameter info what=models where=rawfile
+//element info what=inst where=rawfile
+//outputParameter info what=output where=rawfile
+//designParamVals info what=parameters where=rawfile
+//primitives info what=primitives where=rawfile
+//subckts info what=subckts where=rawfile
+saveOptions options save=allpub

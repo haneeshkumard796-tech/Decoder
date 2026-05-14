@@ -1,0 +1,21 @@
+Exported variables from results directory:  ./power/design_config.raw/
+
+date               :  1:09:38 AM, Sun Feb 9, 2025
+design             :  (no title)
+simulator          :  spectre
+version            :  21.1.0.546.isr13
+
+
+Measurement Name   :  timeSweep
+Analysis Type      :  tran
+dynamic_100_percent    =  -6.88505e-06 
+dynamic_50_percent    =  -4.02408e-06 
+static_power_1        =  -5.90126e-10 
+static_power_2        =  2.11769e-08 
+static_power_3        =  4.57418e-08 
+static_power_4        =  -4.11697e-08 
+
+
+
+
+

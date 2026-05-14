@@ -1,0 +1,27 @@
+simulator lang = spice
+
+.tran 100ps 180ns
+
+
+V1 Vdd gnd 1v
+V2 Vss gnd 0v
+
+//V_clk clk gnd pwl(0n 0v 4.95n 0v 5.05n 1v 9.9n 1v 10n 0v 14.95n 0v 15.05n 1v 19.9n 1v 20n 0v 24.95n 0v 25.05n 1v 29.9n 1v 30n 0v 34.95n 0v 35.05n 1v 39.9n 1v 40n 0v 44.95n 0v 45.05n 1v 49.9n 1v 50n 0v 54.95n 0v 55.05n 1v 59.9n 1v 60n 0v 64.95n 0v 65.05n 1v 69.9n 1v 70n 0v 74.95n 0v 75.05n 1v 79.9n 1v 80n 0v 84.95n 0v 85.05n 1v 89.9n 1v 90n 0v 94.95n 0v 95.05n 1v 99.9n 1v 100n 0v 104.95n 0v 105.05n 1v 109.9n 1v 110n 0v 114.95n 0v 115.05n 1v 119.9n 1v 120n 0v 124.95n 0v 125.05n 1v 129.9n 1v 130n 0v 134.95n 0v 135.05n 1v 139.9n 1v 140n 0v 144.95n 0v 145.05n 1v 149.9n 1v 150n 0v 154.95n 0v 155.05n 1v 159.9n 1v 160n 0v)
+
+
+//V_D D gnd pwl(0n 0v 11.9n 0v 12n 1v 21.9n 1v 22n 0v 31.9n 0v 32n 1v 41.9n 1v 42n 0v 51.9n 0v 52n 1v 61.9n 1v 62n 0v 71.9n 0v 72n 1v 81.9n 1v 82n 0v 91.9n 0v 92n 1v 101.9n 1v 102n 0v 111.9n 0v 112n 1v 121.9n 1v 122n 0v 131.9n 0v 132n 1v 141.9n 1v 142n 0v 151.9n 0v 152n 1v 161.9n 1v 162n 0v)
+
+//V_A A gnd pwl(0n 0v 11.9n 0v 12n 0v 21.9n 0v 22n 0v 31.9n 0v 32n 0v 41.9n 0v 42n 0v 51.9n 0v 52n 0v 61.9n 0v 62n 0v 71.9n 0v 72n 0v 81.9n 0v 82n 1v 91.9n 1v 92n 1v 101.9n 1v 102n 1v 111.9n 1v 112n 1v 121.9n 1v 122n 1v 131.9n 1v 132n 1v 141.9n 1v 142n 1v 151.9n 1v 152n 1v 161.9n 1v)
+
+//V_B B gnd pwl(0n 0v 11.9n 0v 12n 0v 21.9n 0v 22n 0v 31.9n 0v 32n 0v 41.9n 0v 42n 1v 51.9n 1v 52n 1v 61.9n 1v 62n 1v 71.9n 1v 72n 1v 81.9n 1v 82n 0v 91.9n 0v 92n 0v 101.9n 0v 102n 0v 111.9n 0v 112n 0v 121.9n 0v 122n 1v 131.9n 1v 132n 1v 141.9n 1v 142n 1v 151.9n 1v 152n 1v 161.9n 1v 162n 0v)
+
+//V_C C gnd pwl(0n 0v 11.9n 0v 12n 0v 21.9n 0v 22n 1v 31.9n 1v 32n 1v 41.9n 1v 42n 0v 51.9n 0v 52n 0v 61.9n 0v 62n 1v 71.9n 1v 72n 1v 81.9n 1v 82n 0v 91.9n 0v 92n 0v 101.9n 0v 102n 1v 111.9n 1v 112n 1v 121.9n 1v 122n 0v 131.9n 0v 132n 0v 141.9n 0v 142n 1v 151.9n 1v 152n 1v 161.9n 1v 162n 0v)
+
+V_A A gnd pwl(0n 0v 10n 0v 10.1n 1v 20n 1v 20.1n 0v 30n 0v 30.1n 1v)
+V_B B gnd pwl(0n 0v 10n 0v 10.1n 1v 20n 1v 20.1n 0v 30n 0v 30.1n 1v)
+V_C C gnd pwl(0n 0v 20n 0v 30n 0v 30.1n 1v)
+V_D D gnd pwl(0n 0v 20n 0v 30n 0v 30.1n 1v)
+
+V_clk clk gnd pwl(0n 0v 20n 0v 50n 0v 50.1n 1v)
+
+simulator lang = spectre
